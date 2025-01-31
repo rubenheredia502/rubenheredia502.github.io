@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title in browser -->
+    <title>Custom Links</title>
+    <!-- Icon in the browser -->
+    <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
+    <!-- Letter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/418257a175.js" crossorigin="anonymous"></script>
+    <!-- Ko-Fi Donations -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+    <!-- My Custom Links -->
+<body>
+    <div class="container">
+        <div class="profile-pic"></div>
+            <!-- Nick Name-->
+        <div class="username">
+            <i class="fab fa-instagram"></i> _rubenheredia502_
+        </div>
+            <!-- Discord -->
+        <div class="link" onclick="openLink('https://discord.gg/MsNEdMGFqv')">
+            <i class="fab fa-discord"></i> Discord
+        </div>
+            <!-- Documentation -->
+        <div class="link" onclick="openLink('https://zaragozarp.gitbook.io/documentacion')">
+            <i class="fas fa-book"></i> Documentación
+        </div>
+            <!-- Tebex -->
+        <div class="link" onclick="openLink('https://zaragozaroleplay.tebex.io/')">
+            <i class="fa-solid fa-shop"></i> Tebex
+        </div>
+            <!-- Github -->
+        <div class="link" onclick="openLink('https://github.com/rubenheredia502')">
+            <i class="fa-brands fa-github"></i> Github
+        </div>
+            <!-- FiveM Download -->
+        <div class="support-section">
+            <div class="button-container">
+                <a href="https://fivem.net/" target="_blank" class="join-button">Descargar FiveM</a>
+            </div>
+        </div>
+            <!-- End -->
+    </div>
+            
+    <script>
+        // Your personalized Ko-Fi -- https://ko-fi.com/Manage/donation-widget-setup 
+        kofiWidgetOverlay.draw('zaragozarp', {
+          'type': 'floating-chat',
+          'floating-chat.donateButton.text': 'Support Us',
+          'floating-chat.donateButton.background-color': '#ff38b8',
+          'floating-chat.donateButton.text-color': '#fff'
+        });
+
+        // DO NOT TOUCH
+        function openLink(url) {
+          window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
